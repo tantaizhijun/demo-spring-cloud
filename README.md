@@ -1,4 +1,6 @@
-# demo-spring-cloud
-practice lessonï¼šspringcloud, eureka, springboot
+### Æô¶¯·½Ê½
 
-spring cloudçš„ç»ƒä¹ é¡¹ç›®
+ÏÈÆô¶¯Á½¸ö·şÎñÆ÷
+ÔÚÆô¶¯Á½¸ö·şÎñÌá¹©Õß
+ÔÙÆô¶¯·şÎñµ÷ÓÃÕß
+ÔËĞĞrest-clientÀïµÄmain()·½·¨
