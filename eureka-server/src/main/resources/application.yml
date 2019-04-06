@@ -1,0 +1,31 @@
+
+#本项目是eureka服务器，设置为false即可
+##一是声明是否将自己的信息注册到eureka服务器，默认为true；
+##二是是否到eureka服务器抓取信息，
+eureka:
+  client:
+    service-url:
+      defaultZone: http://slave2:8770/eureka/
+  instance:
+    hostname: slave1
+server:
+  port: 8771
+spring:
+  application:
+    name: eureka-server
+  profiles: slave1
+---
+server:
+  port: 8770
+spring:
+  application:
+    name: eureka-server
+  profiles: slave2
+eureka:
+  instance:
+    hostname: slave2
+  client:
+    service-url:
+      defaultZone: http://slave1:8771/eureka/
+
+# 使用以上两个slave来启动服务器，他们会互相注册
